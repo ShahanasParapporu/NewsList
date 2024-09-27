@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/home2">
+
+
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.example.mvvmpass.Fragments.Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_home2_to_briefFragment"
+            app:destination="@id/briefFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/briefFragment"
+        android:name="com.example.mvvmpass.Fragments.BriefFragment"
+        tools:layout="@layout/fragment_brief" >
+
+        <action
+            android:id="@+id/action_briefFragment_to_home2"
+            app:destination="@id/home2" />
+
+    </fragment>
+
+</navigation>

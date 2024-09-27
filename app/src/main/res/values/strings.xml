@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MvvmPass</string>
+    <string name="hey_there_i_am_list_fragment">Hey There! I am List Fragment</string>
+</resources>
